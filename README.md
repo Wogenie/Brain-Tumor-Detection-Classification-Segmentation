@@ -59,7 +59,6 @@ No Tumor
 📈 Performance
 Accuracy: ~99% (depending on dataset/model)
 Confidence Score Example: 99.97%
----
 
 ## 🖥️ UI Preview
 
@@ -96,7 +95,7 @@ Then open it in your browser and test the application by uploading an MRI image.
 
 👨‍💻 Author
 
-© 2026 Neural Engineers
+© 2026 Neural Engineers - WOGENIE LIYEW
 Medical Imaging System | Biomedical Engineering Project
 
 📜 License
