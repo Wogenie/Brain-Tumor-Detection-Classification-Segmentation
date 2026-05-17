@@ -45,6 +45,9 @@ Confidence Score Calculation
 Results Sent to Frontend
       ↓
 Visualization in Web UI
+```
+
+---
 
 ## 📁 Project Structure
 
@@ -65,7 +68,10 @@ Brain Tumor Detection Classification Segmentation/
 ├── README.md
 └── .gitignore
 ```
-```## 📌 How It Works```
+
+---
+
+## 📌 How It Works
 
 - Upload MRI image via web interface  
 - Image is preprocessed (resize, normalization)  
@@ -75,36 +81,58 @@ Brain Tumor Detection Classification Segmentation/
   - Tumor segmentation  
 - Results are returned to backend  
 - Frontend displays prediction and segmentation mask  
-##🧠 Tumor Classes
-Glioma
-Meningioma
-Pituitary Tumor
-No Tumor
-📈 Performance
-Accuracy: ~99% (depending on dataset/model)
-Confidence Example: 99.97%
-🖥️ UI Preview
-<p align="center"> <img src="web_images_result/home_page.jpeg" width="45%" /> <img src="web_images_result/predicted_image.jpeg" width="45%" /> </p>
-⚙️ How to Run the Project
-Clone repository
+
+---
+
+## 🧠 Tumor Classes
+
+- Glioma  
+- Meningioma  
+- Pituitary Tumor  
+- No Tumor  
+
+---
+
+## 📈 Performance
+
+- Accuracy: ~99% (depending on dataset/model)  
+- Confidence Example: 99.97%  
+
+---
+
+## 🖥️ UI Preview
+
+<p align="center">
+  <img src="web_images_result/home_page.jpeg" width="45%" />
+  <img src="web_images_result/predicted_image.jpeg" width="45%" />
+</p>
+
+---
+
+## ⚙️ How to Run the Project
+
+```bash
 git clone <repo-url>
 cd Brain-Tumor-Detection
-Install dependencies
 pip install -r requirements.txt
-Run backend server
 uvicorn Web_side.Backend.main:app --reload
-Open in browser
+```
+
+Then open:
+
+```
 http://127.0.0.1:8000
-Use the system
-Upload MRI image
-View tumor prediction
-View segmentation mask
-👨‍💻 Author
+```
 
-© 2026 Neural Engineers — ##Wogenie Liyew
-Medical Imaging System | Biomedical Engineering Project
+---
 
-📜 License
+## 👨‍💻 Author
+
+© 2026 Neural Engineers — Wogenie Liyew  
+Medical Imaging System | Biomedical Engineering Project  
+
+---
+
+## 📜 License
 
 This project is for educational and research purposes only.
-```
