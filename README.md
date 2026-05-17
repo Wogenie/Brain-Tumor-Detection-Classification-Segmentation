@@ -1,104 +1,98 @@
 🧠 Brain Tumor Detection, Classification & Segmentation
+A deep learning-based medical imaging system that detects, classifies, and segments brain tumors from MRI scans.
+✨ Features
 
-A deep learning–based medical imaging system that detects, classifies, and segments brain tumors from MRI scans.
-
-The system provides:
-
-Tumor detection
-Tumor classification
-Segmentation mask generation
-Confidence score
-Web-based real-time interface
-🚀 Features
 🧠 Brain tumor detection from MRI images
 🔬 Tumor classification (Glioma, Meningioma, Pituitary, No Tumor)
-🎯 Tumor segmentation using deep learning model
-📊 Prediction confidence score
-🖼️ Upload MRI and view results instantly
-🌐 Full-stack web application
+🎯 Precise tumor segmentation using deep learning
+📊 Confidence score for every prediction
+🖼️ Real-time visualization of results and segmentation masks
+🌐 Modern full-stack web application
+
+
 🏗️ System Architecture
-Frontend: HTML, CSS, JavaScript (UI for upload & results)
-Backend: FastAPI handling inference
-Model: CNN-based classification + segmentation (TensorFlow / Keras)
-Processing Flow:
-Image Upload → Preprocessing → Model Prediction → Segmentation → Output Display
+
+Frontend: HTML, CSS, JavaScript
+Backend: FastAPI
+Models: CNN (Classification) + U-Net style (Segmentation) built with TensorFlow/Keras
+Pipeline: Image Upload → Preprocessing → Dual Model Inference → Visualization
+
+
 📁 Project Structure
-Brain Tumor Detection Classification Segmentation/
-│
+textBrain-Tumor-Detection/
 ├── Web side/
-│   ├── Frontend/
-│   ├── Backend/
-│   │   ├── main.py
-│   │   ├── models/
-│
-├── Datasets/
-├── web images result/
+│   ├── Frontend/               # HTML, CSS, JS files
+│   └── Backend/
+│       ├── main.py             # FastAPI application
+│       ├── models/             # Trained model files
+│       └── utils.py            # Helper functions
+├── Datasets/                   # Training datasets
+├── models/                     # Best trained models
+├── web_images_result/          # Screenshots for README
+├── requirements.txt
 ├── README.md
 └── .gitignore
-⚙️ Tech Stack
-Python 🐍
-TensorFlow / Keras 🤖
-OpenCV 👁️
-FastAPI ⚡
-HTML, CSS, JavaScript 🌐
-NumPy & Pandas 📊
-📌 How It Works
-Upload MRI image via web interface
-Image is preprocessed (resize, normalization)
-Deep learning model predicts:
-Tumor presence
-Tumor class
-Segmentation mask
-Results are displayed on UI
+
 🧠 Tumor Classes
+
 Glioma
 Meningioma
 Pituitary Tumor
 No Tumor
-📈 Performance
-Accuracy: ~99% (depends on dataset/model)
-Confidence Example: 99.97%
-🖥️ UI Preview
-<p align="center"> <img src="web images result/home page.jpeg" width="45%" /> <img src="web images result/predicted image.jpeg" width="45%" /> </p>
-⚙️ How to Run the Project
-1. Clone project
-git clone <repo-url>
-cd Brain-Tumor-Detection
-2. Install dependencies
-pip install -r requirements.txt
-3. Run backend server
-uvicorn Web side.Backend.main:app --reload
-4. Open in browser
-http://127.0.0.1:8000
-5. Use the system
-Upload MRI image
-Get prediction
-View segmentation mask
-👨‍💻 Author
 
+
+📈 Performance
+
+Accuracy: ~99% (on standard Brain Tumor MRI Dataset)
+Example Confidence: 99.97%
+
+
+🖥️ UI Preview
+
+  <img src="web_images_result/home_page.jpeg" width="45%" alt="Home Page">
+  <img src="web_images_result/predicted_image.jpeg" width="45%" alt="Prediction Result">
+
+
+⚙️ How It Works
+
+User uploads an MRI scan through the web interface
+Image is preprocessed (resized & normalized)
+Classification model predicts tumor type and confidence
+If a tumor is detected, the segmentation model generates a tumor mask
+Results (label, confidence, and overlay) are displayed instantly
+
+
+🚀 How to Run the Project
+Prerequisites
+
+Python 3.11
+Recommended: Create and activate a virtual environment
+
+Step-by-step Setup
+
+Clone the repositoryBashgit clone <your-repo-url>
+cd Brain-Tumor-Detection
+Install dependenciesBashpip install -r requirements.txt
+Run the FastAPI BackendBashcd "Web side/Backend"
+uvicorn main:app --reload
+Open your browser and go to:
+http://127.0.0.1:8000
+Upload an MRI image and get instant predictions.
+
+
+⚡ Tech Stack
+
+Python 🐍
+TensorFlow / Keras 🤖
+FastAPI ⚡
+OpenCV & Pillow
+HTML, CSS, JavaScript
+NumPy
+
+
+👨‍💻 Author
 © 2026 Neural Engineers — Wogenie Liyew
 Medical Imaging System | Biomedical Engineering Project
 
 📜 License
-
-For educational and research purposes only.
-
-🧠 ABOUT YOUR PROJECT (IMPORTANT EXPLANATION)
-
-Your system is a full AI medical pipeline:
-
-🔹 1. Input
-
-MRI scan uploaded via web UI
-
-🔹 2. Backend (FastAPI)
-
-Handles request + sends image to model
-
-🔹 3. Deep Learning Model
-Classification CNN → tumor type
-Segmentation model → tumor mask
-🔹 4. Output
-Prediction label
-Confidence score
-Segmentation visualization
+This project is for educational and research purposes only. It is not intended for clinical diagnosis or medical use.
