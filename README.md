@@ -8,7 +8,7 @@ This system is a full-stack AI application that integrates a web interface with 
 ![Home Page](web_images_result/home_page.jpeg)
 
 ### 🔍 Prediction Result
-<img src="web_images_result/home_page.jpeg" width="400" />
+![model predicted result](web_images_result/result_page.jpeg)
 ---
 ## 🚀 Key Capabilities
 
