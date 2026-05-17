@@ -65,7 +65,7 @@ Brain Tumor Detection Classification Segmentation/
 ├── README.md
 └── .gitignore
 ```
-## 📌 How It Works
+```## 📌 How It Works```
 
 - Upload MRI image via web interface  
 - Image is preprocessed (resize, normalization)  
