@@ -53,3 +53,20 @@ This system is an AI application that integrates a web interface with a deep lea
                 │
                 ▼
      Visualization in Web UI
+Brain-Tumor-Detection/
+│
+├── Web_side/
+│   ├── Frontend/
+│   │   └── index.html (HTML/CSS/JS files)
+│   │
+│   └── Backend/
+│       ├── main.py
+│       └── models/
+│           └── trained_model.keras
+│
+├── Datasets/
+├── web_images_result/
+│   ├── home_page.jpeg
+│   └── predicted_image.jpeg
+├── README.md
+└── .gitignore
