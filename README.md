@@ -5,14 +5,10 @@ This system is a full-stack AI application that integrates a web interface with 
 
 ---
 ### 🏠 Home Page
-<p align="center">
-  <img src="web_images_result/home_page.jpeg" width="70%" />
-</p>
+![Home Page](web_images_result/home_page.jpeg)
 
 ### 🔍 Prediction Result
-<p align="center">
-  <img src="web_images_result/predicted_image.jpeg" width="70%" />
-</p>
+![Result prediction](web_images_result//predicted_image.jpeg)
 ---
 ## 🚀 Key Capabilities
 
