@@ -20,7 +20,7 @@ This system is a full-stack AI application that integrates a web interface with 
 ## 🏗️ System Architecture
 
 - **Frontend:** HTML, CSS, JavaScript (user interface)
-- **Backend:** :contentReference[oaicite:0]{index=0} handling API requests and inference
+- **Backend:** FastAPI handling API requests and inference
 - **AI Model:** CNN-based classification + segmentation (TensorFlow / Keras)
 - **Processing Flow:** Image preprocessing → Model inference → Prediction → Visualization
 
@@ -45,7 +45,7 @@ Confidence Score Calculation
       ↓
 Results Sent to Frontend
       ↓
-Visualization in Web UI```
+Visualization in Web UI
 📁 Project Structure
 Brain Tumor Detection Classification Segmentation/
 │
@@ -62,7 +62,6 @@ Brain Tumor Detection Classification Segmentation/
 ├── web_images_result/
 ├── README.md
 └── .gitignore
-
 📌 How It Works
 Upload MRI image via web interface
 Image is preprocessed (resize, normalization)
@@ -98,7 +97,7 @@ View tumor prediction
 View segmentation mask
 👨‍💻 Author
 
-© 2026 Neural Engineers — Wogenie Liyew
+© 2026 Neural Engineers — ##Wogenie Liyew
 Medical Imaging System | Biomedical Engineering Project
 
 📜 License
