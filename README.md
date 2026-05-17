@@ -46,7 +46,8 @@ Confidence Score Calculation
 Results Sent to Frontend
       ↓
 Visualization in Web UI
-📁 Project Structure
+
+#📁 Project Stracture
 Brain Tumor Detection Classification Segmentation/
 │
 ├── Web side/
@@ -62,7 +63,9 @@ Brain Tumor Detection Classification Segmentation/
 ├── web_images_result/
 ├── README.md
 └── .gitignore
-📌 How It Works
+
+
+##📌 How It Works
 Upload MRI image via web interface
 Image is preprocessed (resize, normalization)
 Deep learning model performs inference:
@@ -79,7 +82,7 @@ No Tumor
 📈 Performance
 Accuracy: ~99% (depending on dataset/model)
 Confidence Example: 99.97%
-🖥️ UI Preview
+##🖥️ UI Preview
 <p align="center"> <img src="web_images_result/home_page.jpeg" width="45%" /> <img src="web_images_result/predicted_image.jpeg" width="45%" /> </p>
 ⚙️ How to Run the Project
 1. Clone repository
@@ -95,7 +98,7 @@ http://127.0.0.1:8000
 Upload MRI image
 View tumor prediction
 View segmentation mask
-👨‍💻 Author
+##👨‍💻 Author
 
 © 2026 Neural Engineers — ##Wogenie Liyew
 Medical Imaging System | Biomedical Engineering Project
