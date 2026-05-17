@@ -45,7 +45,7 @@ Confidence Score Calculation
       ↓
 Results Sent to Frontend
       ↓
-Visualization in Web UI
+Visualization in Web UI```
 📁 Project Structure
 Brain Tumor Detection Classification Segmentation/
 │
