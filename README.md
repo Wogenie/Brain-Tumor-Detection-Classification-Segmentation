@@ -1,67 +1,89 @@
-🧠 Brain Tumor Detection, Classification & Segmentation
+# 🧠 Brain Tumor Detection, Classification & Segmentation
 
 A deep learning–based medical imaging system that detects, classifies, and segments brain tumors from MRI scans.
 
-The system provides:
+This system is a full-stack AI application that integrates a web interface with a deep learning backend to provide real-time medical image analysis.
 
-Tumor detection
-Tumor classification
-Segmentation mask generation
-Confidence score
-Web-based real-time interface
-🚀 Features
-🧠 Brain tumor detection from MRI images
-🔬 Tumor classification (Glioma, Meningioma, Pituitary, No Tumor)
-🎯 Tumor segmentation using deep learning model
-📊 Prediction confidence score
-🖼️ Upload MRI and view results instantly
-🌐 Full-stack web application
-🏗️ System Architecture
-Frontend: HTML, CSS, JavaScript (UI for upload & results)
-Backend: FastAPI handling inference
-Model: CNN-based classification + segmentation (TensorFlow / Keras)
-Processing Flow:
-Image Upload → Preprocessing → Model Prediction → Segmentation → Output Display
+---
+
+## 🚀 Key Capabilities
+
+- 🧠 Brain tumor detection from MRI scans  
+- 🔬 Tumor classification (Glioma, Meningioma, Pituitary, No Tumor)  
+- 🎯 Tumor segmentation (tumor localization mask)  
+- 📊 Confidence score for predictions  
+- 🖼️ Real-time MRI upload and visualization  
+- 🌐 Full-stack web application (Frontend + Backend + AI Model)
+
+---
+
+## 🏗️ System Architecture
+
+- **Frontend:** HTML, CSS, JavaScript (user interface)
+- **Backend:** :contentReference[oaicite:0]{index=0} handling API requests and inference
+- **AI Model:** CNN-based classification + segmentation (TensorFlow / Keras)
+- **Processing Flow:** Image preprocessing → Model inference → Prediction → Visualization
+
+---
+
+## 🔄 System Workflow
+
+```text
+MRI Image Upload
+      ↓
+Frontend (UI)
+      ↓
+FastAPI Backend
+      ↓
+Preprocessing (resize, normalize)
+      ↓
+Deep Learning Model
+   ├── Classification (Tumor Type)
+   └── Segmentation (Tumor Mask)
+      ↓
+Confidence Score Calculation
+      ↓
+Results Sent to Frontend
+      ↓
+Visualization in Web UI
 📁 Project Structure
 Brain Tumor Detection Classification Segmentation/
 │
 ├── Web side/
 │   ├── Frontend/
+│   │   ├── HTML / CSS / JS files
+│   │
 │   ├── Backend/
 │   │   ├── main.py
 │   │   ├── models/
+│   │   │   ├── trained_model.keras
 │
 ├── Datasets/
-├── web images result/
+├── web_images_result/
 ├── README.md
 └── .gitignore
-⚙️ Tech Stack
-Python 🐍
-TensorFlow / Keras 🤖
-OpenCV 👁️
-FastAPI ⚡
-HTML, CSS, JavaScript 🌐
-NumPy & Pandas 📊
+
 📌 How It Works
 Upload MRI image via web interface
 Image is preprocessed (resize, normalization)
-Deep learning model predicts:
-Tumor presence
-Tumor class
-Segmentation mask
-Results are displayed on UI
+Deep learning model performs inference:
+Tumor detection
+Tumor classification
+Tumor segmentation
+Results are returned to backend
+Frontend displays prediction and segmentation mask
 🧠 Tumor Classes
 Glioma
 Meningioma
 Pituitary Tumor
 No Tumor
 📈 Performance
-Accuracy: ~99% (depends on dataset/model)
+Accuracy: ~99% (depending on dataset/model)
 Confidence Example: 99.97%
 🖥️ UI Preview
-<p align="center"> <img src="web images result/home page.jpeg" width="45%" /> <img src="web images result/predicted image.jpeg" width="45%" /> </p>
+<p align="center"> <img src="web_images_result/home_page.jpeg" width="45%" /> <img src="web_images_result/predicted_image.jpeg" width="45%" /> </p>
 ⚙️ How to Run the Project
-1. Clone project
+1. Clone repository
 git clone <repo-url>
 cd Brain-Tumor-Detection
 2. Install dependencies
@@ -72,7 +94,7 @@ uvicorn Web side.Backend.main:app --reload
 http://127.0.0.1:8000
 5. Use the system
 Upload MRI image
-Get prediction
+View tumor prediction
 View segmentation mask
 👨‍💻 Author
 
@@ -81,4 +103,4 @@ Medical Imaging System | Biomedical Engineering Project
 
 📜 License
 
-For educational and research purposes only.
+This project is for educational and research purposes only.
