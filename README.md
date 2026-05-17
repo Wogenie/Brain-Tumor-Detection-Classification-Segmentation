@@ -26,19 +26,24 @@ This is a full-stack AI application that integrates a modern web interface with 
 
 ---
 
-## 🔄 System Workflow
 
-```mermaid
-graph TD
-    A[MRI Image Upload] --> B[Frontend UI]
-    B --> C[FastAPI Backend]
-    C --> D[Preprocessing<br>(Resize + Normalize)]
-    D --> E[Deep Learning Model]
-    E --> F[Classification<br>(Tumor Type)]
-    E --> G[Segmentation<br>(Tumor Mask)]
-    F & G --> H[Confidence Score]
-    H --> I[Results to Frontend]
-    I --> J[Visualization + Results]
+---
+Brain-Tumor-Detection/
+├── Web side/
+│   ├── Frontend/
+│   │   ├── index.html
+│   │   ├── style.css
+│   │   └── script.js
+│   └── Backend/
+│       ├── main.py
+│       └── models/
+│           └── trained_model.keras
+├── Datasets/
+├── web_images_result/
+├── README.md
+└── requirements.txt
+
+---
 📌 How It Works
 
 Upload an MRI image via the web interface
