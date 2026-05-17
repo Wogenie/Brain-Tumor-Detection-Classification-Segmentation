@@ -4,8 +4,6 @@ A deep learning–based medical imaging system that detects, classifies, and seg
 This system is a full-stack AI application that integrates a web interface with a deep learning backend to provide real-time medical image analysis.
 
 ---
-## 🖥️ UI Preview
-
 ### 🏠 Home Page
 <p align="center">
   <img src="web_images_result/home_page.jpeg" width="70%" />
