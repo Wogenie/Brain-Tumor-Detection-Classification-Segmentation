@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# # Node
+# node_modules/
+
+*.keras
+Datasets/
+# Environment
+ml_env/
+
+# VS Code
+.vscode/
+
+
+# OS files
+.DS_Store

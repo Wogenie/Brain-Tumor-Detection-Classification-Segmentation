@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Brain Tumor Classification</title>
+</head>
+<body>
+<nav id="nav_bar">
+    <h2>BrainScan AI</h2>
+    <h2><a href="about.html">About App</a></h2>
+</nav>
+<header>
+    <h1>Brain Tumor Detection, Classification & Segmentation</h1>
+    <p id="hello_text">
+        Upload your MRI brain image to detect tumors
+        and identify the tumor category using AI.
+    </p>
+</header>
+<div id="file_upload">
+    <h2>Upload MRI Image</h2>
+    <p class="upload_text">Supported formats: JPG, PNG, JPEG</p>
+    <input type="file" id="file_uploaded">
+    <button id="upload_btn">Analyze Image</button>
+</div>
+<div id="loading_screen" style="display:none;">
+    <div class="loader"></div>
+    <h2>Analyzing MRI Image...</h2>
+</div>
+
+<button id="another_respo_btn" style="display: none;">Analyze another Image</button>
+
+<!-- Result Section -->
+
+<div id="result_container" style="display:none;">
+
+    <!-- LEFT SIDE: SUMMARY -->
+    <div class="result_card summary_card">
+        <h2>Prediction Status</h2>
+        <div class="status" id="prediction_status"></div>
+
+        <h2>Tumor Type</h2>
+        <div class="tumor_type" id="tumor_type"></div>
+
+        <h2>Confidence Score</h2>
+        <div class="confidence" id="confidence_score"></div>
+    </div>
+
+    <!-- RIGHT SIDE: IMAGES -->
+    <div class="image_grid">
+
+        <div class="result_card image_card">
+            <h2>Uploaded MRI</h2>
+            <img id="uploaded_image" src="" alt="MRI Image">
+        </div>
+
+        <div class="result_card image_card">
+            <h2>Predicted Mask</h2>
+            <img id="segmented_image" src="" alt="Mask Image">
+        </div>
+    </div>
+
+</div>
+</div>
+
+<footer>
+    <p>
+        © 2026 Neural Engineers |
+        Medical Imaging System | Biomedical Engineering
+    </p>
+</footer>
+<script src="main.js"></script>
+
+</body>
+</html>
+

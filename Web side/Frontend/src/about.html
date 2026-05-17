@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | BrainScan AI</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    min-height:100vh;
+}
+
+#nav_bar{
+    height:70px;
+    display:flex;
+    align-items:center;
+    padding:0 40px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+#nav_bar h2 a{
+    text-decoration:none;
+    color:#38bdf8;
+    transition:color 0.3s ease;
+}
+
+#nav_bar h2 a:hover{
+    color:#1a82af;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+header h1{
+    font-size:2.7rem;
+    margin-bottom:20px;
+}
+
+header p{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+    font-size:1.1rem;
+    line-height:1.6;
+}
+
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    gap:25px;
+}
+
+.about_card p{
+    color:#e2e8f0;
+    line-height:1.8;
+}
+
+.about_card ul{
+    padding-left:20px;
+}
+
+.about_card ul li{
+    margin-bottom:12px;
+    color:#e2e8f0;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .about_card{
+        padding:25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav id="nav_bar">
+    <h2><a href="home.html">BrainScan AI</a></h2>
+</nav>
+
+<header>
+    <h1>About BrainScan AI</h1>
+
+    <p>
+        AI-powered brain tumor classification and segmentation
+        system designed for MRI image analysis.
+    </p>
+</header>
+
+<main>
+
+    <section class="about_card">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            BrainScan AI is a medical imaging system that helps detect
+            brain tumors from MRI scans using deep learning models.
+            The system analyzes uploaded MRI images and predicts
+            whether a tumor exists and identifies its category.
+        </p>
+        <p>Tumor classification - uses Effiecent net pre trained model
+        segmentation - uses EffiecentNet as encoder and customed netword 
+        for the decoder of the Unet Architecture</p>
+
+    </section>
+
+    <section class="about_card">
+
+        <h2>Features</h2>
+
+        <ul>
+            <li>Brain tumor detection</li>
+            <li>MRI image classification</li>
+            <li>Tumor segmentation</li>
+            <li>Fast AI prediction</li>
+            <li>Responsive interface</li>
+        </ul>
+    </section>
+
+    <section class="about_card">
+
+        <h2>Technologies Used</h2>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>TensorFlow </li>
+            <li>FastAPI</li>
+        </ul>
+
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,456 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+html, body {
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+#nav_bar{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+#nav_bar h2{
+    color: #38bdf8;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+#nav_bar h2:hover{
+    color: #4599bd;
+}
+#nav_bar a{
+    text-decoration: none;
+    color: #38bdf8;
+    transition: color 0.3s ease;
+}
+#nav_bar a:hover{
+    color: #4599bd;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+header h1{
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+header p{
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+/* =========================
+   FILE UPLOAD CARD
+========================= */
+#file_upload{
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: 0.3s ease;
+}
+#file_upload:hover{
+    transform: translateY(-5px);
+}
+#file_upload h2{
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+.upload_text{
+    margin-bottom: 25px;
+    color: #cbd5e1;
+}
+/* =========================
+   FILE INPUT
+========================= */
+#file_uploaded{
+    width: 100%;
+    padding: 14px;
+    border: 2px dashed #38bdf8;
+    border-radius: 12px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+#upload_btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#upload_btn:hover{
+    background: #0ea5e9;
+    transform: scale(1.02);
+}
+
+/* LOADING PAGE */
+#loading_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 999;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#another_respo_btn{
+    width: 80%;
+    max-width: 600px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#another_respo_btn:hover{
+    background: #0ea5e9;
+    transform: scale(1.02);
+}
+/* =========================
+MODEL INFORMATION
+========================= */
+#model_info{
+    width:100%;
+    max-width:600px;
+    margin:25px auto;
+    padding:25px;
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+#model_info h3{
+    text-align:center;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+#model_info ul{
+    list-style:none;
+}
+#model_info ul li{
+    padding:14px;
+    margin-bottom:12px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.05);
+    color:#e2e8f0;
+    transition:0.3s ease;
+}
+#model_info ul li:hover{
+    transform:translateX(5px);
+    background:rgba(56,189,248,0.12);
+}
+#model_info ul li span{
+    color:#38bdf8;
+    font-weight:bold;
+}
+/* =========================================
+   RESULT CONTAINER
+========================================= */
+#result_container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 10px;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "summary summary"
+        "img1 img2";
+}
+@media (max-width: 768px) {
+    #result_container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "summary"
+            "img1"
+            "img2";
+    }
+}
+/* =========================
+   RESULT LAYOUT UPGRADE
+========================= */
+
+#result_container{
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 25px;
+    align-items: start;
+}
+
+/* LEFT SUMMARY CARD */
+.summary_card{
+    padding: 25px;
+}
+
+/* RIGHT IMAGE GRID */
+.image_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Make images cleaner */
+.image_card{
+    padding: 15px;
+}
+
+/* Fix image size consistency */
+.image_card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* STATUS FIX (auto styling from JS) */
+.status{
+    margin: 10px 0 20px;
+}
+
+/* =========================
+   RESPONSIVE FIX
+========================= */
+@media (max-width: 900px){
+    #result_container{
+        grid-template-columns: 1fr;
+    }
+
+    .image_grid{
+        grid-template-columns: 1fr;
+    }
+}
+/* =========================================
+   CARD TITLES
+========================================= */
+.result_card h2{
+    margin-bottom: 20px;
+    color: #38bdf8;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+.status{
+    padding: 14px;
+    border-radius: 14px;
+
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.detected{
+    background: rgba(239,68,68,0.15);
+    color: #f87171;
+    border: 1px solid rgba(239,68,68,0.4);
+}
+
+.not_detected{
+    background: rgba(34,197,94,0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34,197,94,0.4);
+}
+
+/* =========================================
+   TUMOR TYPE
+========================================= */
+.tumor_type{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* =========================================
+   CONFIDENCE SCORE
+========================================= */
+.confidence{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* =========================================
+   IMAGE CARDS
+========================================= */
+.image_card{
+    grid-column: span 1;
+}
+
+.image_card img{
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+    border: 2px solid rgba(56,189,248,0.2);
+
+    transition: 0.3s ease;
+}
+
+.image_card img:hover{
+    transform: scale(1.02);
+    border-color: #38bdf8;
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media(max-width:768px){
+
+    #result_container{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .result_card{
+        padding: 20px;
+    }
+
+    .tumor_type{
+        font-size: 1.4rem;
+    }
+
+    .confidence{
+        font-size: 1.6rem;
+    }
+
+    .image_card img{
+        height: 220px;
+    }
+}
+/* =========================
+   FOOTER
+========================= */
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer p{
+    color: #cbd5e1;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width: 768px){
+    header h1{
+        font-size: 2rem;
+    }
+    #file_upload{
+        padding: 30px 20px;
+    }
+}
