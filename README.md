@@ -44,9 +44,11 @@ Confidence Score Calculation
       ↓
 Results Sent to Frontend
       ↓
-Visualization in Web UI```
+Visualization in Web UI
+
+## 📁 Project Structure
+
 ```
-##📁 Project Structure
 Brain Tumor Detection Classification Segmentation/
 │
 ├── Web side/
@@ -63,15 +65,16 @@ Brain Tumor Detection Classification Segmentation/
 ├── README.md
 └── .gitignore
 ```
-##📌 How It Works
-Upload MRI image via web interface
-Image is preprocessed (resize, normalization)
-Deep learning model performs inference
-Tumor detection
-Tumor classification
-Tumor segmentation
-Results are returned to backend
-Frontend displays prediction and segmentation mask
+## 📌 How It Works
+
+- Upload MRI image via web interface  
+- Image is preprocessed (resize, normalization)  
+- Deep learning model performs inference  
+  - Tumor detection  
+  - Tumor classification  
+  - Tumor segmentation  
+- Results are returned to backend  
+- Frontend displays prediction and segmentation mask  
 ##🧠 Tumor Classes
 Glioma
 Meningioma
@@ -104,3 +107,4 @@ Medical Imaging System | Biomedical Engineering Project
 📜 License
 
 This project is for educational and research purposes only.
+```
