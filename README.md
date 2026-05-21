@@ -5,10 +5,10 @@ This system is a full-stack AI application that integrates a web interface with 
 
 ---
 ### 🏠 Home Page
-![Home Page](web_images_result/home_page.jpeg)
+![Home Page](https://github.com/Wogenie/Brain-Tumor-Detection-Classification-Segmentation/blob/026c88efb9e5f08b5f239f542865535a84dd9695/web%20images%20result/home%20page.jpeg)
 
 ### 🔍 Prediction Result
-![model predicted result](web_images_result/result_page.jpeg)
+![model predicted result]([web_images_result/result_page.jpeg](https://github.com/Wogenie/Brain-Tumor-Detection-Classification-Segmentation/blob/026c88efb9e5f08b5f239f542865535a84dd9695/web%20images%20result/predicted%20image.jpeg))
 ---
 ## 🚀 Key Capabilities
 
