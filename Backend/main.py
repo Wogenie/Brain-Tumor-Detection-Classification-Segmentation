@@ -28,7 +28,7 @@ def combined_loss(y_true, y_pred):
     )
     return bce + dice
 
-path = 'models/resUnet_model.keras'
+path = 'Models/resUnet_model.keras'
 model = tf.keras.models.load_model(
     path,
     compile = False,
