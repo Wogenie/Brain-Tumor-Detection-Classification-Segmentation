@@ -5,7 +5,7 @@ This system is a full-stack AI application that integrates a web interface with 
 
 ---
 ### 🏠 Home 
-PageFrontend/public/result 2.jpg
+![Brain Tumor Detection Result](Web%20side/frontend-react/public/result 2.jpg)
 ### 🔍 Prediction Result
 ![model predicted result](https://github.com/Wogenie/Brain-Tumor-Detection-Classification-Segmentation/blob/53fe0cb9804d6310d7caee7756985a0727df13d4/web%20images%20result/predicted%20image.jpeg)
 ---
