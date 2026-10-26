@@ -490,7 +490,8 @@ Brain MRI Classification and Segmentation Project
 
 ## 📜 License
 
-Add the license that applies to your project and its model weights. Unless a license is included, reuse and redistribution permissions should not be assumed.
+This project is intended for educational and research purposes only.
+
 
 ---
 
