@@ -12,7 +12,7 @@ The application supports four classification categories: **No Tumor, Glioma, Men
 ![BrainScan AI Home Page](web_images_result/home_page.jpeg)
 
 ### Prediction Results
-![Brain Tumor Prediction and Segmentation](Frontend/public/result_2.jpg)
+![Brain Tumor Prediction and Segmentation](Frontend/public/result 2.jpg)
 
 ---
 
