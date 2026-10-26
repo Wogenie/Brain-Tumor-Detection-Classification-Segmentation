@@ -8,8 +8,6 @@ The application supports four classification categories: **No Tumor, Glioma, Men
 
 <!-- Update these paths if your image filenames or folders differ. -->
 
-### Prediction Results
-![Brain Tumor Detection Result](Frontend/public/result%202.jpg)
 
 ---
 
