@@ -241,6 +241,10 @@ This lets the frontend display the segmentation output directly in an image elem
 
 ## 🔄 Prediction Workflow
 
+### Prediction Results
+![Brain Tumor Detection Result](Frontend/public/result%202.jpg)
+
+
 1. The user selects a JPG/JPEG MRI image in React.
 2. React sends the image as multipart form data to FastAPI.
 3. FastAPI reads and preprocesses the image.
